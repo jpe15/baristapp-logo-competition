@@ -6,11 +6,11 @@ original_image_folder = os.path.expanduser('~/Box/BaristApp Logo Comp/')
 cell_template = \
     """
 <td>
-                <img class="large" src="$imgfile" />
                 <img class="normal" src="$imgfile" />
                 <img class="small" src="$imgfile" />
                 <img class="smaller" src="$imgfile" />
 </td>"""
+#                <img class="large" src="$imgfile" />
 row_template = Template("<tr>\n" + "<td>$num</td>" + 2*cell_template + "\n</tr>\n")
 #%%
 anonymized_keys = ''
